@@ -27,3 +27,11 @@ end
 def reverse_array(array)
   array.reverse
 end
+
+def kesha_maker(array)
+  kesha_names = []
+  array.each do |name|
+    kesha_names << name[0..1] + "$" + name[3..-1]
+  end
+  kesha_names
+end
