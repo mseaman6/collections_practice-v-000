@@ -41,3 +41,11 @@ def find_a(array)
     string.start_with?("a")
   end
 end
+
+def sum_array(array)
+  array.inject { |result, element| result + element }
+end
+
+sum_array([1,2,3,4])
+
+[1, 2, 3, 4].inject { |result, element| result + element }
